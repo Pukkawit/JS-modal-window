@@ -39,6 +39,9 @@ p {
   font-weight: 600;
   transition: all ease-in-out 0.15s;
 }
+.show-modal:focus {
+  outline: none;
+}
 .show-modal:hover {
   background-color: #bdd0d8;
 }
