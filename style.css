@@ -57,7 +57,7 @@ p {
   outline: none;
   border: none;
 }
-.close-modal:hover {
+.close-modal:hover .close-modal:active {
   background-color: #ce0000;
   color: white;
 }
