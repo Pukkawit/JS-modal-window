@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  padding: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: relative;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+p {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10vw;
+  text-wrap: nowrap;
+}
+.show-modal {
+  padding: 15px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #0000003e;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all ease-in-out 0.15s;
+}
+.show-modal:hover {
+  background-color: #bdd0d8;
+}
+.close-modal {
+  background-color: #0000001f;
+  padding: 0 5px;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  transition: all ease-in-out 0.2s;
+  position: relative;
+  left: 97%;
+  margin: -5px;
+  outline: none;
+  border: none;
+}
+.close-modal:hover {
+  background-color: #ce0000;
+  color: white;
+}
+.modal {
+  background-color: #ffd8fc;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 400px;
+  padding: 30px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    20%
+  ); /* Center the item both horizontally and vertically */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 2px 2px 10px #0000005c;
+  z-index: 1000;
+}
+.modal h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.modal h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.modal p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.modal li {
+  margin-left: 20px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  text-indent: -15px;
+  list-style-type: square;
+}
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0000006b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.hidden {
+  display: none;
+}
+/* Apply blur effect to content behind the overlay when it's active */
+.overlay-active {
+  filter: blur(1.5px);
+}
+
+@media all and (max-width: 600px) {
+  .btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vw;
+    text-wrap: nowrap;
+  }
+  .modal {
+    max-width: 80vh;
+    width: 80vw;
+    height: max-content;
+    top: 20%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      20%
+    ); /* Center the item both horizontally and vertically */
+  }
+}
