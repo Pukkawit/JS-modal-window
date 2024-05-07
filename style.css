@@ -38,8 +38,10 @@ p {
   font-size: 0.9rem;
   font-weight: 600;
   transition: all ease-in-out 0.15s;
+  -webkit-tap-highlight-color: transparent;
 }
-.show-modal:focus {
+.show-modal:focus,
+.show-modal:active {
   outline: none;
 }
 .show-modal:hover {
