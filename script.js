@@ -23,6 +23,7 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[1].addEventListener('click', function () {
     modal2.classList.remove('hidden');
     overlay.classList.remove('hidden');
+    modal3.style.top = '0';
   });
   btnsOpenModal[2].addEventListener('click', function () {
     modal3.classList.remove('hidden');
